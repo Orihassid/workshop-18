@@ -2,6 +2,7 @@
 # First job: identical steps to PR workflow
 # Second job: Deploy to Heroku
 
+
 name: on-merge-workflow
 
 on:
@@ -18,3 +19,9 @@ jobs:
     runs-on: # [to be filled]
     steps:
     # [rest to be filled]
+    
+  - name: Hello world action
+
+    
+    env: # Or as an environment variable
+      HEROKU_API_KEY: ${{ secrets.MYTOKEN }}
