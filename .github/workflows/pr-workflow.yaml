@@ -14,5 +14,5 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Install Node.js
-        run: pr_workflow
+        uses: actions/setup-node@v3.4.1
         
